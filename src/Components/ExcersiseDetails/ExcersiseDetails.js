@@ -1,6 +1,6 @@
 import React from 'react';
 import './ExcersiseDetails.css'
-const ExcersiseDetails = ({exerciseTime}) => {
+const ExcersiseDetails = ({exerciseTime, breakTime, handleToast}) => {
     return (
         <div className='exercise-details'>
             <h5>Exercise Details</h5>
@@ -10,9 +10,9 @@ const ExcersiseDetails = ({exerciseTime}) => {
             </div>
             <div className="exercise-time-detalis exercise-time">
                 <p className='bold-p'>Break Time</p>
-                <p className='light'>200 Munites</p>
+                <p className='light'>{breakTime} Munites</p>
             </div>
-            <button className='complete-btn'>Activity Completed</button>
+            <button onClick={() => handleToast(true)} className='complete-btn'>Activity Completed</button>
         </div>
     );
 };
