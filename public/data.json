@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "chore": "Take out Trash",
+        "time": 20,
+        "image": "images/pexels-steve-johnson-850216.jpg"
+    },
+    {
+        "id": 2,
+        "chore": "Prepare Food",
+        "time": 45,
+        "image": "images/pexels-klaus-nielsen-6287295.jpg"
+    },
+    {
+        "id": 3,
+        "chore": "Mop the Floor",
+        "time": 15,
+        "image": "images/pexels-andrea-piacquadio-3769711.jpg"
+    },
+    {
+        "id": 4,
+        "chore": "Exercise",
+        "time": 15,
+        "image": "images/pexels-pixabay-40751.jpg"
+    }
+    ,
+    {
+        "id": 5,
+        "chore": "Pick up Groceries",
+        "time": 15,
+        "image": "images/pexels-anna-shvets-3962285.jpg"
+    }
+    ,
+    {
+        "id": 6,
+        "chore": "Water the Plants",
+        "time": 5,
+        "image": "images/pexels-cottonbro-4503268.jpg"
+    }
+    
+]
