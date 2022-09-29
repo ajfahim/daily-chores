@@ -1,5 +1,5 @@
 .activities{
-    border: 2px solid violet;
+    
     width: 80%;
     display: flex;
     justify-content: center;
@@ -12,7 +12,14 @@
 .title{
     display: flex;
     align-items: center;
-    margin-left: 20px;
+    margin-top: 50px;
+    color: blue;
+    margin-bottom: 20px;
+    
+}
+.icon{
+    font-size: 40px;
+    color: blueviolet;
 }
 .title h3{
     margin-left: 10px ;

@@ -1,4 +1,9 @@
 .sidebar{
-    border: 2px solid brown;
+   
     width: 20%;
+    padding: 10px;
+}
+
+.details span{
+    margin-left: 10px;
 }

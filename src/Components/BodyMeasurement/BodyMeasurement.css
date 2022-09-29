@@ -1,0 +1,16 @@
+.body-measure{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: antiquewhite;
+    padding-top: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+.bold{
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 20px;
+}

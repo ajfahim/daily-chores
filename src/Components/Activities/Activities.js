@@ -15,21 +15,21 @@ const Activities = () => {
     return (
         <div className='activities'>
             <div className='activities-container'>
-            <div className='title'>
-                <FontAwesomeIcon icon={faDumbbell} />
-                <h3>Daily Chores</h3>
-            </div>
-            <p>Select today's Chores</p>
-            <div className='chores'>
-                
-                    {
-                        activities.map((activity)=><ActivityCard activity = {activity}></ActivityCard>)
-                       
-                    }
-                
-                
-            </div>
-            </div>
+                    <div className='title'>
+                        <FontAwesomeIcon className='icon' icon={faDumbbell} />
+                        <h3>Daily Chores</h3>
+                    </div>
+                    <p>Select today's Chores</p>
+                        <div className='chores'>
+                            
+                                {
+                                    activities.map((activity)=><ActivityCard activity = {activity}></ActivityCard>)
+                                
+                                }
+                            
+                            
+                        </div>
+                </div>
             
             
            
