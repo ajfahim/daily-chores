@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import Activities from './Components/Activities/Activities';
 import Sidebar from './Components/Sidebar/Sidebar';
-import ActivityToast from './Components/Toast/ActivityToast';
+
 
 function App() {
 
@@ -26,11 +26,14 @@ function App() {
         .then (data => setActivities(data))
     },[])
   return (
+   
     <div className='container'>
-      <ActivityToast show={show} onClose={onClose}></ActivityToast>
+      
       <Activities activities = {activities} addToList = {addToList}></Activities>
-      <Sidebar handleToast={handleToast} exerciseTime={exerciseTime}></Sidebar>
+      <Sidebar handleToast={handleToast} exerciseTime={exerciseTime} show={show} onClose={onClose}></Sidebar>
     </div>
+    
+    
   );
 }
 

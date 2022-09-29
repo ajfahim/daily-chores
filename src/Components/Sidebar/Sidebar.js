@@ -7,7 +7,7 @@ import { getLocalStorage, setLocalStorage } from '../utils/localStorage';
 import "./Sidebar.css";
 
 
-const Sidebar = ({exerciseTime, handleToast}) => {
+const Sidebar = ({exerciseTime, handleToast, show, onClose}) => {
     const [breakTime, setBreakTime] = useState(0);
 
     
@@ -27,7 +27,7 @@ const Sidebar = ({exerciseTime, handleToast}) => {
            <User></User>
            <BodyMeasurement></BodyMeasurement>
            <Break addBreakTime={addBreakTime}></Break>
-           <ExcersiseDetails handleToast={handleToast} exerciseTime={exerciseTime} breakTime = {breakTime}></ExcersiseDetails>
+           <ExcersiseDetails show={show} onClose={onClose} handleToast={handleToast} exerciseTime={exerciseTime} breakTime = {breakTime}></ExcersiseDetails>
         </div>
     );
 };

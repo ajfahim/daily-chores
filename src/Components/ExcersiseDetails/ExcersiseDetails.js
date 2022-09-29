@@ -1,6 +1,7 @@
 import React from 'react';
+import ActivityToast from '../Toast/ActivityToast';
 import './ExcersiseDetails.css'
-const ExcersiseDetails = ({exerciseTime, breakTime, handleToast}) => {
+const ExcersiseDetails = ({exerciseTime, breakTime, handleToast, show, onClose}) => {
     return (
         <div className='exercise-details'>
             <h5>Exercise Details</h5>
@@ -13,6 +14,7 @@ const ExcersiseDetails = ({exerciseTime, breakTime, handleToast}) => {
                 <p className='light'>{breakTime} Munites</p>
             </div>
             <button onClick={() => handleToast(true)} className='complete-btn'>Activity Completed</button>
+            <ActivityToast show={show} onClose={onClose}></ActivityToast>
         </div>
     );
 };
