@@ -1,0 +1,38 @@
+.exercise-details{
+    margin-top: 20px;
+}
+.exercise-time-detalis{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 16px;
+}
+.exercise-time{
+    margin-top: 20px;
+}
+.bold-p{
+    font-weight: 700;
+}
+.light{
+    
+    color: gray;
+}
+.complete-btn{
+    margin-top: 30px;
+    background-color: blueviolet;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    padding: 5px 0;
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+.complete-btn:hover{
+    background-color: violet;
+}
