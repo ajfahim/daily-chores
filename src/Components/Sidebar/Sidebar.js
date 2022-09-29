@@ -6,13 +6,13 @@ import User from '../User/User';
 import "./Sidebar.css";
 
 
-const Sidebar = () => {
+const Sidebar = ({exerciseTime}) => {
     return (
         <div className='sidebar'>
            <User></User>
            <BodyMeasurement></BodyMeasurement>
            <Break></Break>
-           <ExcersiseDetails></ExcersiseDetails>
+           <ExcersiseDetails exerciseTime={exerciseTime} ></ExcersiseDetails>
         </div>
     );
 };

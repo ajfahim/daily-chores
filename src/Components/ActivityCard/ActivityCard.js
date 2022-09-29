@@ -2,7 +2,7 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-function ActivityCard({activity}) {
+function ActivityCard({activity, addToList}) {
   
   return (
     <Card style={{ width: '18rem' }}>
@@ -12,7 +12,7 @@ function ActivityCard({activity}) {
         <Card.Text>
           Time Required: {activity.time} minutes
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary" onClick={()=>addToList(activity.time)}>Add to List</Button>
       </Card.Body>
     </Card>
   );

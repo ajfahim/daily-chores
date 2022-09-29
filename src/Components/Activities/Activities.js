@@ -1,17 +1,11 @@
-import React, { useLayoutEffect, useState } from 'react';
+
 import "./Activities.css";
 import ActivityCard from "../ActivityCard/ActivityCard"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import{ faDumbbell } from '@fortawesome/free-solid-svg-icons'
 
-const Activities = () => {
-    const [activities, setActivities]= useState([])
-
-    useLayoutEffect(()=>{
-        fetch('data.json')
-        .then(res => res.json())
-        .then (data => setActivities(data))
-    },[])
+const Activities = ({activities , addToList}) => {
+    
     return (
         <div className='activities'>
             <div className='activities-container'>
@@ -23,7 +17,7 @@ const Activities = () => {
                         <div className='chores'>
                             
                                 {
-                                    activities.map((activity)=><ActivityCard activity = {activity}></ActivityCard>)
+                                    activities.map((activity)=><ActivityCard key={activity.id} addToList={addToList} activity = {activity}></ActivityCard>)
                                 
                                 }
                             
